@@ -1,13 +1,25 @@
+
 Rosario::Application.routes.draw do
+  root 'pages#home'
+  #root 'pages/home'
   get "pages/home"
   get "pages/contact"
   get "pages/about"
-  get "pages/help"
+  #get "pages/help"
+  #get 'pages/help' => 'pages#help'
+  get 'pages/help', :to => 'pages#help'
+  
+  #match '/help', :to => 'pages#help'
+  
+   
+   
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  #root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -58,3 +70,5 @@ Rosario::Application.routes.draw do
   #     resources :products
   #   end
 end
+
+
