@@ -12,3 +12,4 @@ Things you may want to cover:
 * Configuration
 
 Hasta aqui llegamos al capitulo 6.1.1 de Ruby on Rails 3 Tutorial
+ llegamos al capitulo 6.1.1 de Ruby on Rails 3 Tutor
