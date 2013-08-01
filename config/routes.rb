@@ -1,15 +1,19 @@
 
 Rosario::Application.routes.draw do
+  get "users/new"
+
   root 'pages#home'
-  #root 'pages/home'
-  get "pages/home"
-  get "pages/contact"
-  get "pages/about"
-  #get "pages/help"
-  #get 'pages/help' => 'pages#help'
-  get 'pages/help', :to => 'pages#help'
   
-  #match '/help', :to => 'pages#help'
+   get '/signup', :to => 'users#new'
+
+   get "pages/home"
+   get "pages/contact"
+   get "pages/about"
+   #get "pages/help"
+   #get 'pages/help' => 'pages#help'
+   get 'pages/help', :to => 'pages#help'
+  
+  #match '/help', :to => 'pages#help' en rails 3 se usa match en el 4 esta despreciado
   
    
    
